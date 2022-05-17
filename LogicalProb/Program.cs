@@ -17,6 +17,7 @@ namespace BasicCorePrograms
             Console.WriteLine("7: For Swapping Two numbers");
             Console.WriteLine("8: For checking even or odd numbers");
             Console.WriteLine("9: For checking vowels and consonants");
+            Console.WriteLine("10: For finding largest number from three numbers");
 
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
@@ -54,9 +55,13 @@ namespace BasicCorePrograms
                     EvenOdd EvenOdd = new EvenOdd();
                     EvenOdd.CheckEvenOdd();
                     break;
-                case 9:
-                    VowelConsonant Vowel_Con = new VowelConsonant();
-                    Vowel_Con.VowelCon();
+               // case 9:
+                //    VowelConsonant Vowel_Con = new VowelConsonant();
+                 //   Vowel_Con.VowelCon();
+                  //  break;
+                case 10:
+                    LargestNum Num = new LargestNum();
+                    Num.Largestnumber();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
