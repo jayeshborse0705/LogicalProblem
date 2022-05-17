@@ -1,5 +1,7 @@
 ﻿using System;
 
+using System;
+
 namespace BasicCorePrograms
 {
     internal class Program
@@ -11,7 +13,7 @@ namespace BasicCorePrograms
             Console.WriteLine("1: For Flip a coin and find % of Head and Tail");
             Console.WriteLine("2: For checking leap year");
             Console.WriteLine("3: For finding power of 2");
-
+            Console.WriteLine("4: For geting harmonic seies numbers");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -27,6 +29,10 @@ namespace BasicCorePrograms
                 case 3:
                     PowerOfTwo PowerTwo = new PowerOfTwo();
                     PowerTwo.PowerTwo();
+                    break;
+                case 4:
+                    HarmonicF Harmoni_F = new HarmonicF();
+                    Harmoni_F.HarmonicFunction();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
