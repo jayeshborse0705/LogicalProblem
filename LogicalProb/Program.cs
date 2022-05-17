@@ -9,6 +9,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Hello");
             Console.WriteLine("Please enter number as per options");
             Console.WriteLine("1: For Flip a coin and find % of Head and Tail");
+            Console.WriteLine("2: For checking leap year");
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
             {
@@ -17,7 +18,10 @@ namespace BasicCorePrograms
                     FlipCoin FlippingCoin = new FlipCoin();
                     FlippingCoin.Flip_Coin();
                     break;
-                
+                case 2:
+                    LeapYear Leap_Year = new LeapYear();
+                    Leap_Year.Leap();
+                    break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
                     break;
