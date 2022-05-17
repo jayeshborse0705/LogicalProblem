@@ -14,6 +14,7 @@ namespace BasicCorePrograms
             Console.WriteLine("4: For geting harmonic seies numbers");
             Console.WriteLine("5: For geting prime factor of a number");
             Console.WriteLine("6: For geting Qoutient and Remainder");
+            Console.WriteLine("7: For Swapping Two numbers");
 
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
@@ -42,6 +43,10 @@ namespace BasicCorePrograms
                 case 6:
                     QoutientRem Qoutient_Remainder = new QoutientRem();
                     Qoutient_Remainder.QoutientRemainder();
+                    break;
+                case 7:
+                    SwapTwoNumber SwapNum = new SwapTwoNumber();
+                    SwapNum.swapping();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
