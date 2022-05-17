@@ -15,6 +15,7 @@ namespace BasicCorePrograms
             Console.WriteLine("5: For geting prime factor of a number");
             Console.WriteLine("6: For geting Qoutient and Remainder");
             Console.WriteLine("7: For Swapping Two numbers");
+            Console.WriteLine("8: For cheching even or odd numbers");
 
             int check = Convert.ToInt32(Console.ReadLine());
             switch (check)
@@ -47,6 +48,10 @@ namespace BasicCorePrograms
                 case 7:
                     SwapTwoNumber SwapNum = new SwapTwoNumber();
                     SwapNum.swapping();
+                    break;
+                case 8:
+                    EvenOdd EvenOdd = new EvenOdd();
+                    EvenOdd.CheckEvenOdd();
                     break;
                 default:
                     Console.WriteLine("Please SELECT correct number ! ");
